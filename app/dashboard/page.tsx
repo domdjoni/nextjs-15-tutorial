@@ -1,5 +1,5 @@
 
-import { buttonVariants } from '@/components/ui/button'
+
 import Link from 'next/link'
 import React from 'react'
 import { prisma } from '../utils/db'
@@ -36,7 +36,7 @@ const page = async () => {
         <div className='flex items-center justify-between mb-4'>
           <h2 className='text-xl font-medium'>Your Blog articles</h2>
 
-          <Link className={buttonVariants()} href="/dashboard/create">
+          <Link  href="/dashboard/create">
             Create Post
           </Link>
 
