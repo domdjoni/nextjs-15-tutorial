@@ -39,7 +39,7 @@ const Navbar = async () => {
           user ? (
                <div className='flex items-center gap-4'>
                     {user.given_name}
-                    <LogoutLink >Logout</LogoutLink>
+                   
                </div>
           ) :(
                <div className='flex items-center gap-4'>
