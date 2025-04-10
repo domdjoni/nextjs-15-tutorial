@@ -27,7 +27,7 @@ const page = async () => {
   const {getUser} = getKindeServerSession()
   const user = await getUser()
 
-  const data = await getData(user.id)
+  const data = await getData(user?.id)
 
 
  
