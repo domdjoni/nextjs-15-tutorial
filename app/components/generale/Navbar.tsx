@@ -43,7 +43,7 @@ const Navbar = async () => {
           ) :(
                <div className='flex items-center gap-4'>
                     <LoginLink>Login</LoginLink>
-                    <RegisterLink >Sign Up</RegisterLink>
+                    <RegisterLink>Sign Up</RegisterLink>
 
                </div>
           )
