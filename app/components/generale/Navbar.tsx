@@ -1,6 +1,6 @@
 
-import { prisma } from '@/app/utils/db'
-import { Button, buttonVariants } from '@/components/ui/button'
+
+import {  buttonVariants } from '@/components/ui/button'
 import { LoginLink, LogoutLink, RegisterLink } from '@kinde-oss/kinde-auth-nextjs/components'
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
 import Link from 'next/link'

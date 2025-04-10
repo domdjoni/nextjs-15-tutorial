@@ -5,7 +5,7 @@ import React from 'react'
 import { prisma } from '../utils/db'
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
 import BlogpostCard from '../components/generale/BlogpostCard'
-import { resolve } from 'path'
+
 
 
 async function getData(userId: string) {
