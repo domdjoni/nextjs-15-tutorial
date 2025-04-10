@@ -1,7 +1,7 @@
 
 
 
-import { buttonVariants } from '@/components/ui/button'
+
 import { LoginLink, LogoutLink, RegisterLink } from '@kinde-oss/kinde-auth-nextjs/components'
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
 import Link from 'next/link'
@@ -38,12 +38,12 @@ const Navbar = async () => {
           user ? (
                <div className='flex items-center gap-4'>
                     {user.given_name}
-                    <LogoutLink className={buttonVariants({variant:'secondary'})}>Logout</LogoutLink>
+                    <LogoutLink >Logout</LogoutLink>
                </div>
           ) :(
                <div className='flex items-center gap-4'>
                     <LoginLink className={buttonVariants()}>Login</LoginLink>
-                    <RegisterLink className={buttonVariants({variant:"secondary"})}>Sign Up</RegisterLink>
+                    <RegisterLink >Sign Up</RegisterLink>
 
                </div>
           )
