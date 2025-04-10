@@ -3,7 +3,7 @@
 
 
 
-import { LoginLink, LogoutLink, RegisterLink } from '@kinde-oss/kinde-auth-nextjs/components'
+import { LoginLink,  RegisterLink } from '@kinde-oss/kinde-auth-nextjs/components'
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
 import Link from 'next/link'
 import React from 'react'
@@ -38,7 +38,9 @@ const Navbar = async () => {
       {
           user ? (
                <div className='flex items-center gap-4'>
-                    {user.given_name}
+                    {user?.given_name}
+                    
+
                    
                </div>
           ) :(
