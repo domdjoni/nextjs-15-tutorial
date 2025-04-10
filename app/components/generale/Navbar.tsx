@@ -38,11 +38,11 @@ const Navbar = async () => {
           user ? (
                <div className='flex items-center gap-4'>
                     {user.given_name}
-                    <LogoutLink >Logout</LogoutLink>
+                    <LogoutLink>Logout</LogoutLink>
                </div>
           ) :(
                <div className='flex items-center gap-4'>
-                    <LoginLink className={buttonVariants()}>Login</LoginLink>
+                    <LoginLink>Login</LoginLink>
                     <RegisterLink >Sign Up</RegisterLink>
 
                </div>
